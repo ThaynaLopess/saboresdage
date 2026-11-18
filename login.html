@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#261100">
+  <title>Entrar | Sabores da Gê</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="cadastro-page">
+  <header class="menu-superior">
+    <a href="index.html" class="menu-superior-logo"><img src="img/ge.png" alt="" class="logo-ge">Sabores da Gê</a>
+    <nav class="menu-superior-links" aria-label="Menu principal">
+      <a href="index.html">Início</a>
+      <a href="index.html#sobre">Sobre nós</a>
+      <a href="index.html#contatos">Contatos</a>
+      <a href="cadastro.html">Cadastro</a>
+    </nav>
+  </header>
+  <main class="cadastro-card">
+    <h2 class="page-title">Entrar na sua conta</h2>
+    <form id="formLogin" novalidate>
+      <div class="field"><label for="email">E-mail</label><input type="email" id="email" autocomplete="email"><small class="error" id="erro-email"></small></div>
+      <div class="field"><label for="senha">Senha</label><input type="password" id="senha" autocomplete="current-password"><small class="error" id="erro-senha"></small></div>
+      <button type="submit" class="btn">Entrar</button>
+      <p class="success" id="msg" hidden>Login ainda não conectado ao servidor (parte do back-end).</p>
+    </form>
+    <p class="login-link">Ainda não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
+  </main>
+  
+  <script src="storage.js"></script>
+  <script src="login.js"></script>
+</body>
+</html>
